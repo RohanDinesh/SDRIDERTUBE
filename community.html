@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sdridertube</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8c7618dc04.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="sdr img/sdr-logo.jpg" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html"    >Home</a></li>
+                    <li><a href="about.html"    >About</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="collage.html"  >Collage</a></li>
+                    <li><a href="contact.html"  >Contact</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Community</h1>
+    </section>
+
+<!---------- Course ---------->
+<section class="course">
+    <h1>Team sdridertube:</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni, laborum?</p>
+
+    <div class="row">
+        <div class="course-col">
+            <h1 class="name">1st person name</h1>
+            <img class="person-img" src="https://source.unsplash.com/330x200/?male,face" alt="image of uday">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aut vero odit modi accusantium unde veritatis corrupti rerum adipisci? Neque, temporibus eum consequatur blanditiis corporis error sunt nulla ipsum facilis vero numquam sed impedit magni iste quas reiciendis quia. Voluptas consequatur cupiditate suscipit ducimus veritatis! Eius voluptates nostrum delectus ad.</p>
+        </div>
+        <div class="course-col">
+            <h1 class="name">2nd person name</h1>
+            <img class="person-img" src="https://source.unsplash.com/330x200/?man,face" alt="image of uday">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aut vero odit modi accusantium unde veritatis corrupti rerum adipisci? Neque, temporibus eum consequatur blanditiis corporis error sunt nulla ipsum facilis vero numquam sed impedit magni iste quas reiciendis quia. Voluptas consequatur cupiditate suscipit ducimus veritatis! Eius voluptates nostrum delectus ad.</p>
+        </div>
+        <div class="course-col">
+            <h1 class="name">3rd person name</h1>
+            <img class="person-img" src="https://source.unsplash.com/330x200/?women,face" alt="image of uday">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aut vero odit modi accusantium unde veritatis corrupti rerum adipisci? Neque, temporibus eum consequatur blanditiis corporis error sunt nulla ipsum facilis vero numquam sed impedit magni iste quas reiciendis quia. Voluptas consequatur cupiditate suscipit ducimus veritatis! Eius voluptates nostrum delectus ad.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="course-col">
+            <h1 class="name">1st person name</h1>
+            <img class="person-img" src="https://source.unsplash.com/330x200/?male,face" alt="image of uday">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aut vero odit modi accusantium unde veritatis corrupti rerum adipisci? Neque, temporibus eum consequatur blanditiis corporis error sunt nulla ipsum facilis vero numquam sed impedit magni iste quas reiciendis quia. Voluptas consequatur cupiditate suscipit ducimus veritatis! Eius voluptates nostrum delectus ad.</p>
+        </div>
+        <div class="course-col">
+            <h1 class="name">2nd person name</h1>
+            <img class="person-img" src="https://source.unsplash.com/330x200/?man,face" alt="image of uday">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aut vero odit modi accusantium unde veritatis corrupti rerum adipisci? Neque, temporibus eum consequatur blanditiis corporis error sunt nulla ipsum facilis vero numquam sed impedit magni iste quas reiciendis quia. Voluptas consequatur cupiditate suscipit ducimus veritatis! Eius voluptates nostrum delectus ad.</p>
+        </div>
+        <div class="course-col">
+            <h1 class="name">3rd person name</h1>
+            <img class="person-img" src="https://source.unsplash.com/330x200/?women,face" alt="image of uday">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aut vero odit modi accusantium unde veritatis corrupti rerum adipisci? Neque, temporibus eum consequatur blanditiis corporis error sunt nulla ipsum facilis vero numquam sed impedit magni iste quas reiciendis quia. Voluptas consequatur cupiditate suscipit ducimus veritatis! Eius voluptates nostrum delectus ad.</p>
+        </div>
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<!---------- footer ---------->
+<section class="footer">
+    <h1>Reach out to me at:</h1>
+    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, enim.</p> -->
+    <div class="icons">
+        <a href=""><i class="fab fa-youtube"></i></a>
+        <a href=""><i class="fab fa-facebook"></i></a>
+        <a href=""><i class="fab fa-instagram" id="insta"></i></a>
+        <a href=""><i class="fab fa-snapchat"></i></a>
+        <a href=""><i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fab fa-telegram"></i></a>
+        <a href=""><i class="fab fa-google-plus-g"></i></a> 
+        <!-- <i class="fab fa-youtube-square"></i> -->
+        <!-- <i class="fab fa-instagram-square"></i> -->
+    </div>
+    <div>
+        <p>Made with <i class="far fa-heart"></i> by Rohan Dinesh</p>
+    </div>
+</section>  
+<!---------- JavaScript for Toggle Menu ---------->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+</body>
+</html>

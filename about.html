@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sdridertube</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8c7618dc04.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="sdr img/sdr-logo.jpg" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html"    >Home</a></li>
+                    <li><a href="about.html"    >About</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="collage.html"  >Collage</a></li>
+                    <li><a href="contact.html"  >Contact</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About me</h1>
+    </section>
+
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>Hello, I am Saketh Dharmasoth!</h1>
+            <p>Lorem 50 words
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus atque dicta quos repellat recusandae doloremque, nobis dolor voluptatibus repudiandae quasi corporis accusamus tempora officia odio neque obcaecati possimus. Tenetur sunt assumenda voluptate nihil amet et, odio inventore hic! Obcaecati ipsa quia enim dolorum itaque vitae, doloribus quidem illo ipsam laborum!
+            </p>
+            <button class="button about-btn"><span class="about-btn2">Explore!</span></button>
+        </div>
+        <div class="about-col">
+            <img src="img/about.jpg" alt="">
+        </div>
+    </div>
+</section>
+
+<!-- <section>
+    <div class="wrapper">
+        <div class="static-txt">I'm a</div>
+        <ul class="dynamic-txts">
+          <li><span>YouTuber</span></li>
+          <li><span>Designer</span></li>
+          <li><span>Developer</span></li>
+          <li><span>Freelancer</span></li>
+        </ul>
+      </div>
+</section> -->
+
+<!---------- footer ---------->
+<section class="footer">
+    <h1>Connect with us at:</h1>
+    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, enim.</p> -->
+    <div class="icons">
+        <a href=""><i class="fab fa-youtube"></i></a>
+        <a href=""><i class="fab fa-facebook"></i></a>
+        <a href=""><i class="fab fa-instagram" id="insta"></i></a>
+        <a href=""><i class="fab fa-snapchat"></i></a>
+        <a href=""><i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fab fa-telegram"></i></a>
+        <a href=""><i class="fab fa-google-plus-g"></i></a> 
+        <!-- <i class="fab fa-youtube-square"></i> -->
+        <!-- <i class="fab fa-instagram-square"></i> -->
+    </div>
+    <div>
+        <p>Made with <i class="far fa-heart"></i> by Rohan Dinesh</p>
+    </div>
+</section>  
+<!---------- JavaScript for Toggle Menu ---------->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>

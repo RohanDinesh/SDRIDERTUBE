@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sdridertube</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8c7618dc04.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="sdr img/sdr-logo.jpg" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html"    >Home</a></li>
+                    <li><a href="about.html"    >About</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="collage.html"  >Collage</a></li>
+                    <li><a href="contact.html"  >Contact</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Image Gallery</h1>
+    </section>
+
+    <section class="collage-intro">
+
+    <div class="full-img" id="fullImgBox">
+      <img src="img/cafeteria.png" alt="image in fullscreen" id="fullImg">
+      <span onclick="closeFullImg()"><i class="far fa-window-close"></i></span>
+    </div>
+
+    <div id="gallery" class="container-fluid">  
+        <img onclick="openFullImg(this.src)" src="sdr img/0.PNG" >
+        <img onclick="openFullImg(this.src)" src="sdr img/16.PNG" class="img-responsive">
+        <img onclick="openFullImg(this.src)" src="sdr img/26.PNG" class="img-responsive">
+        <img onclick="openFullImg(this.src)" src="sdr img/00000.PNG" class="img-responsive">
+        <img onclick="openFullImg(this.src)" src="sdr img/1.PNG" class="img-responsive">
+        <img onclick="openFullImg(this.src)" src="sdr img/2.PNG" class="img-responsive">
+        <img onclick="openFullImg(this.src)" src="sdr img/3.PNG" class="img-responsive">
+        <img onclick="openFullImg(this.src)" src="sdr img/4.PNG" class="img-responsive">
+        <img onclick="openFullImg(this.src)" src="sdr img/5.PNG" class="img-responsive">
+        <img onclick="openFullImg(this.src)" src="sdr img/6.PNG" class="img-responsive">
+        <img onclick="openFullImg(this.src)" src="sdr img/7.PNG" class="img-responsive">
+        <img onclick="openFullImg(this.src)" src="sdr img/8.PNG" class="img-responsive">
+        <img onclick="openFullImg(this.src)" src="sdr img/9.PNG" class="img-responsive">
+        <img onclick="openFullImg(this.src)" src="sdr img/10.PNG" class="img-responsive">
+        <img onclick="openFullImg(this.src)" src="sdr img/24.PNG" class="img-responsive">
+        <img onclick="openFullImg(this.src)" src="sdr img/12.JPG" class="img-responsive">
+        <img onclick="openFullImg(this.src)" src="sdr img/13.PNG" class="img-responsive">
+        <img onclick="openFullImg(this.src)" src="sdr img/14.PNG" class="img-responsive">
+        <img onclick="openFullImg(this.src)" src="sdr img/15.PNG" class="img-responsive">
+        <img onclick="openFullImg(this.src)" src="sdr img/00.PNG" class="img-responsive">
+        <img onclick="openFullImg(this.src)" src="sdr img/17.PNG" class="img-responsive">
+        <img onclick="openFullImg(this.src)" src="sdr img/18.PNG" class="img-responsive">
+        <img onclick="openFullImg(this.src)" src="sdr img/19.PNG" class="img-responsive">
+        <img onclick="openFullImg(this.src)" src="sdr img/20.PNG" class="img-responsive">
+        <img onclick="openFullImg(this.src)" src="sdr img/21.PNG" class="img-responsive">
+        <img onclick="openFullImg(this.src)" src="sdr img/22.JPG" class="img-responsive">
+        <img onclick="openFullImg(this.src)" src="sdr img/23.PNG" class="img-responsive">
+        <img onclick="openFullImg(this.src)" src="sdr img/11.PNG" class="img-responsive">
+        <img onclick="openFullImg(this.src)" src="sdr img/25.PNG" class="img-responsive">
+        <img onclick="openFullImg(this.src)" src="sdr img/000.PNG" class="img-responsive">
+        <img onclick="openFullImg(this.src)" src="sdr img/27.PNG" class="img-responsive">
+        <img onclick="openFullImg(this.src)" src="sdr img/28.PNG" class="img-responsive">
+        <img onclick="openFullImg(this.src)" src="sdr img/29.PNG" class="img-responsive">
+        <img onclick="openFullImg(this.src)" src="sdr img/30.PNG" class="img-responsive">
+        <img onclick="openFullImg(this.src)" src="sdr img/31.PNG" class="img-responsive">
+        <img onclick="openFullImg(this.src)" src="https://source.unsplash.com/1024x768?bike,bike" class="img-responsive">
+          <!-- <video class="vid" controls>
+            <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+            </source>
+          </video> -->
+          <video class="vid" controls>
+            <source src="sdr img/Sharing My Time Table And Efficient Strategy To Learn Machine Learning In Quick Time.mp4" type="video/mp4">
+            </source>
+          </video>
+    </div>
+        
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+    
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-body">
+          </div>
+        </div>
+    
+      </div>
+    </div>
+    
+    </section>
+
+
+
+<!---------- footer ---------->
+<!-- <section class="footer">
+    <h1>Connect with us at:</h1>
+    <div class="icons">
+        <a href=""><i class="fab fa-youtube"></i></a>
+        <a href=""><i class="fab fa-facebook"></i></a>
+        <a href=""><i class="fab fa-instagram" id="insta"></i></a>
+        <a href=""><i class="fab fa-snapchat"></i></a>
+        <a href=""><i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fab fa-telegram"></i></a>
+        <a href=""><i class="fab fa-google-plus-g"></i></a> 
+    </div>
+    <div>
+        <p>Made with <i class="far fa-heart"></i> by Rohan Dinesh</p>
+    </div>
+</section>   -->
+
+<script>
+// ---------- JavaScript for Toggle Menu ----------
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+// ---------- javascript for image gallery ----------
+    // $(document).ready(function(){
+    //   $("img").click(function(){
+    //   var t = $(this).attr("src");
+    //   $(".modal-body").html("<img src='"+t+"' class='modal-img'>");
+    //   $("#myModal").modal();
+    // });
+
+    $("video").click(function(){
+      var v = $("video > source");
+      var t = v.attr("src");
+      $(".modal-body").html("<video class='model-vid' controls><source src='"+t+"' type='video/mp4'></source></video>");
+      $("#myModal").modal();  
+    });
+    // });
+
+// ---------- JavaScript to open and minimize clicked pics ----------
+</script>
+
+<script src="Javascript/img-gallery.js" type="text/javascript">
+</script>
+
+</body>
+</html>
